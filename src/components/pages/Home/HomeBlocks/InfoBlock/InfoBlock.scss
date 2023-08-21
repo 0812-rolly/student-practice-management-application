@@ -1,0 +1,36 @@
+@import '/src/common/styles/variables.scss';
+
+.info-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 90px 150px 90px 150px;
+
+    &__info {
+
+        &__title {
+            margin: 5px 90px;
+            font-weight: 400;
+            font-size: 1.3rem;
+            color: $gray-dark;
+        }
+
+        &__line {
+            width: 155px;
+            margin: 5px 0px 20px 80px;
+        }
+
+        &__text {
+            font-weight: lighter;
+            color: $gray-dark;
+            margin: 20px 0px 0px 80px;
+            padding: 0px 0px 15px 0px;
+            font-size: 1.3rem;
+            font-weight: 300;
+            line-height: 28px;
+            text-align: left;
+        }
+    }
+}

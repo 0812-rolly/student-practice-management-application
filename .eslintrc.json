@@ -1,0 +1,40 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "airbnb"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "react/jsx-no-bind": "error",
+        "react/jsx-props-no-multi-spaces": "error",
+        "react/jsx-tag-spacing": "error",
+        "react/no-danger": "error",
+        "react/no-multi-comp": "error",
+        "react/no-redundant-should-component-update": "error",
+        "react/no-this-in-sfc": "error",
+        "react/state-in-constructor": "error",       
+        "no-underscore-dangle": "off",
+        "react/jsx-props-no-spreading": "off"
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "paths": ["src"]
+            }
+        }
+    }
+}

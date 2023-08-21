@@ -1,0 +1,46 @@
+@import '/src/common/styles/variables.scss';
+@import "/src/common/styles/global.scss";
+
+.navbar-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+
+    &__nav-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        text-align: center;
+    }
+    
+    &__links {
+        color: $gray-dark;
+        text-decoration: none;
+        padding: 28px 25px;
+        font-size: 1.1rem;
+    }
+    
+    &__links:hover {
+        color: $primary-color;
+    }
+    
+    &__links:active {
+        color: $primary-color;
+    }
+    
+    &__links:focus {
+        color: $primary-color;
+        border-bottom: 2px solid $primary-color;
+    }
+        
+    &__button {
+        margin-right: 30px;
+        margin-left: 25px;
+        border-radius: 20px;
+        font-size: 1.075rem;
+        width: 120px;
+        height: 35px;
+    }
+}

@@ -1,0 +1,54 @@
+@import "/src/common/styles/variables.scss";
+@import "/src/common/styles/global.scss";
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 5px;
+  padding: 20px 50px;
+  background-color: $light-color;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 8px 0 $gray-medium;
+
+  &__body {
+    min-height: 40px;
+  }
+
+  &__button {
+    cursor: pointer;
+    border-radius: 3px;
+    background: $secondary-color !important;
+    font-weight: normal;
+    width: auto;
+    margin-top: 40px;
+
+    &_cancel {
+      margin-left: 20px;
+    }
+
+    &:hover {
+      background: darken($color: $secondary-color, $amount: 10) !important;
+    }
+  }
+}

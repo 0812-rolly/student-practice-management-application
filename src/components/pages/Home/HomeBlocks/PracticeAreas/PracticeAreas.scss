@@ -1,0 +1,48 @@
+@import '/src/common/styles/variables.scss';
+
+.areas-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 90px 150px 90px 150px;
+
+    &__title {
+        font-weight: bolder;
+        font-size: 1.6rem;
+        color: $gray-dark;
+    }
+
+    &__items-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 50px 0px 0px 0px;
+        flex: 0 1 calc(33% - 1em);
+    }
+
+    &__name {
+        font-size: 1.3rem;
+        color: $gray-dark;
+        padding: 10px 0px 0px 0px;
+    }
+
+    &__image:hover {
+        transform: scale(1.1,1.1);
+        fill: $orange-color;
+    }
+}
+

@@ -1,0 +1,75 @@
+@import "/src/common/styles/variables.scss";
+@import "/src/common/styles/global.scss";
+
+.practice-form {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    min-width: 800px;
+    height: 50%;
+    margin: 0 auto;
+    background: $gray-light;
+    border-radius: 20px;
+
+    &__section {
+        display: flex;
+        width: 100%;
+    }
+    &__start-date {
+        margin-right: 10px;
+    }
+    &__location {
+        margin-right: 10px;
+    }
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:flex-start;
+        width: 70%;
+        color: $gray-dark;
+    }
+    &__item {
+        color: $gray-dark;
+        margin-bottom: 5px;
+        width: 100%;
+        &__photo {
+            border: none;
+            padding: 0;
+            margin: auto 20px;
+        }
+        &__errors {
+            color: rgb(141, 14, 14);
+            font-size: 0.8rem;
+        }
+    &__input {
+        display: block;
+        padding-left: 10px;
+        outline: none;
+        align-content:center;
+        border-radius: 10px;
+        height: 40px;
+        width: 100%;
+        font-weight: 400;
+    }
+    &__input::placeholder {
+        color: #a0a0a0;
+        font-size: 1rem;
+      }
+
+    }
+    &__submit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        border-radius: 40px;
+        background-color: $primary-color;
+        width: 180px;
+        height: 40px;
+        margin: 20px auto 10px auto;
+    }
+}

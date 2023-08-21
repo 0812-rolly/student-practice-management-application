@@ -1,0 +1,22 @@
+@import '/src/common/styles/variables.scss';
+
+.linked-logo {
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    margin-left: 50px;
+    cursor: pointer;
+
+    &__title {
+        text-decoration: none;
+        color: $gray-dark;
+        padding: 15px;
+        font-size: 1.3rem;
+        white-space: nowrap;
+    }
+    
+    &__image {
+        color: $gray-dark;
+        font-size: 0.9rem;
+    }
+}

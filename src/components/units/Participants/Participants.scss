@@ -1,0 +1,51 @@
+@import "/src/common/styles/variables.scss";
+@import "/src/common/styles/global.scss";
+
+.participant-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.participant {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0 10px;
+  width: 100%;
+  font-size: 0.9rem;
+  border-bottom: 1px solid $gray-medium;
+
+  &__name,
+  &__email {
+    width: 30%;
+    margin: 0 20px;
+  }
+
+  &__specialization,
+  &__role {
+    width: 20%;
+    margin: 0 20px;
+  }
+
+  &__icon {
+    fill: darken($color: $gray-medium, $amount: 30);
+
+    &_plus {
+      margin: 20px auto 0;
+    }
+
+    &_minus {
+      margin-right: 20px;
+    }
+
+    &:hover {
+      fill: $gray-dark;
+      cursor: pointer;
+    }
+
+    &:active {
+      fill: $secondary-color;
+    }
+  }
+}

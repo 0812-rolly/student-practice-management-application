@@ -1,0 +1,79 @@
+@import "/src/common/styles/variables.scss";
+@import "/src/common/styles/global.scss";
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 60px 160px;
+
+  &__image {
+    object-fit: cover;
+    width: 210px;
+    height: 250px;
+  }
+
+  &__user-info {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    padding: 0 20px;
+  }
+}
+
+.user-info {
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+    &_name {
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.item {
+  &__wrapper-name {
+    display: flex;
+    align-items: center;
+  }
+
+  &__name {
+    font-size: 2rem;
+    padding-bottom: 4px;
+  }
+
+  &__role {
+    background-color: lighten($color: $secondary-color, $amount: 20);
+    padding: 4px 16px;
+    border-radius: 16px;
+    font-size: 0.8rem;
+    margin-left: 12px;
+  }
+
+  &__icon {
+    margin-right: 12px;
+
+    &_telegram {
+      fill: $telegram-color;
+    }
+
+    &_skype {
+      fill: $skype-color;
+    }
+
+    &_edit {
+      cursor: pointer;
+
+      &:hover {
+        fill: $secondary-color;
+      }
+    }
+  }
+}
+
+.tab-container {
+  width: 100%;
+}

@@ -1,0 +1,15 @@
+@import "/src/common/styles/variables.scss";
+@import "/src/common/styles/global.scss";
+
+.select {
+  outline: none;
+  padding: 4px 10px;
+  border-radius: 3px;
+  border: 1px solid rgb(161, 161, 161);
+
+  &:focus-visible,
+  &:active,
+  &:focus {
+    border-color: $orange-color;
+  }
+}

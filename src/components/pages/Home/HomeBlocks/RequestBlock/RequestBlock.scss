@@ -1,0 +1,27 @@
+@import '/src/common/styles/variables.scss';
+
+.request-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 60px 150px 130px 150px;
+
+    &__title {
+        font-weight: bolder;
+        font-size: 1.6rem;
+        color: $gray-dark;
+        margin-bottom: 50px;
+    }
+
+    &__call-to-action {
+        font-weight: 300;
+        font-size: 1.2rem;
+        color: $gray-dark;
+        flex-wrap: wrap;
+        text-align: center;
+        line-height: 30px;
+        margin: 0px 220px 70px 220px;
+    }
+};

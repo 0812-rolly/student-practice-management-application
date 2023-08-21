@@ -1,0 +1,49 @@
+@import "/src/common/styles/variables.scss";
+@import "/src/common/styles/global.scss";
+
+.input-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items:center;
+    width: 100%;
+    margin: auto;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.input {
+    display: flex;
+    align-items:center;
+    outline: none;
+    padding: 0 10px;
+    border-radius: 3px;
+    border: 0.5px solid rgb(161, 161, 161);
+
+    &:focus-visible,
+    &:active,
+    &:focus {
+        border-color: $orange-color;
+    }
+
+    &__file-info {
+        display: flex;
+        font-size: 0.8rem;
+    }
+
+    &[type="file"] {
+        color: transparent;
+        width: 94px;
+    }
+}
+
+.label {
+    position: relative;
+    text-align: left;
+    width: 110px;
+    margin: 15px 0px;
+    white-space: nowrap;
+}

@@ -1,0 +1,98 @@
+@import "/src/common/styles/variables.scss";
+@import "/src/common/styles/global.scss";
+
+.practices-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px 15px 10px;
+  width: 100%;
+  font-size: 0.9rem;
+  border: 1px solid #e6e6e6;
+  color: black;
+  font-weight: bold;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  &__title,
+  &__startDate,
+  &__endDate {
+    width: 30%;
+    margin: 0 20px;
+  }
+
+  &__startDate,
+  &__endDate {
+    cursor: pointer;
+  }
+
+  &__status,
+  &__location {
+    width: 20%;
+    margin: 0 20px;
+  }
+}
+
+.asc-arrow {
+  width: 0;
+  height: 0;
+  border: solid 5px transparent;
+  background: transparent;
+  border-bottom: solid 7px black;
+  border-top-width: 0;
+  cursor: pointer;
+}
+
+.desc-arrow {
+  width: 0;
+  height: 0;
+  border: solid 5px transparent;
+  background: transparent;
+  border-top: solid 7px black;
+  border-bottom-width: 0;
+  margin-top:1px;
+  cursor: pointer;
+}
+
+.practices {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px 15px 10px;
+  width: 100%;
+  font-size: 0.9rem;
+  border: 1px solid $gray-medium;
+
+  &__title,
+  &__startDate,
+  &__endDate {
+    width: 30%;
+    margin: 0 20px;
+  }
+
+  &__status,
+  &__location {
+    width: 20%;
+    margin: 0 20px;
+  }
+
+  &__link {
+    color: $gray-dark;
+    text-decoration: none;
+  }
+
+  &__link:hover {
+    color: $primary-color;
+  }
+
+  &__link:active {
+    color: $primary-color;
+  }
+
+  &__link:focus {
+    color: $primary-color;
+    border-bottom: 2px solid $primary-color;
+  }
+}
+
+

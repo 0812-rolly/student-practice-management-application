@@ -1,0 +1,67 @@
+@import "/src/common/styles/variables.scss";
+@import "/src/common/styles/global.scss";
+
+.participant-form {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+    width: 260px;
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 80%;
+        color: $gray-dark;
+    }
+    &__item {
+        color: $gray-dark;
+        margin-bottom: 0.5rem;
+        width: 100%;
+        font-size: 0.9rem;
+
+        &__errors {
+            color: rgb(141, 14, 14);
+            font-size: 0.8rem;
+        }
+        &__input {
+            display: block;
+            padding-left: 10px;
+            outline: none;
+            align-content: center;
+            border-radius: 5px;
+            height: 30px;
+            width: 100%;
+            font-weight: 400;
+        }
+        &__input::placeholder {
+            color: #a0a0a0;
+            font-size: 0.8rem;
+        }
+    }
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        border-radius: 40px;
+        background-color: $primary-color;
+        width: 100px;
+        height: 30px;
+        margin-top: 16px;
+    }
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.label {
+    margin: 5px 0px;
+}

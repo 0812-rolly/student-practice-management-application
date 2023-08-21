@@ -1,0 +1,62 @@
+@import "/src/common/styles/variables.scss";
+@import "/src/common/styles/global.scss";
+
+.filter {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 40px 100px 0px;
+
+  &__date {
+    margin: 0 5px 0 5px;
+    text-align: center;
+  }
+
+  &__start-date,
+  &__end-date{
+    height: 38px;
+    border-color: $gray-medium;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    margin: 0 8px;
+    padding: 0px 15px;
+  }
+
+  &__status {
+    width: 100%;
+    margin: 0px 25px 0px 25px;
+  }
+
+  &__button {
+    height: 38px;
+    width: 20%;
+    border-radius: 15px;
+    font-size: 1.075rem;
+  }
+
+  &__button:focus {
+    color: $primary-color;
+    border-bottom: 2px solid $primary-color;
+  }
+
+  &__startDate:hover {
+    border-color: $gray-dark;
+  }
+
+  &__endDate:hover {
+    border-color: $gray-dark;
+  }
+
+}
+
+.filter__status .status-select__control {
+  border-color: $gray-medium;
+}
+.filter__status .status-select__control:hover {
+  border-color: $gray-dark;
+}
+
+.filter__status .status-select__control:active {
+  border-color: $gray-dark;
+}

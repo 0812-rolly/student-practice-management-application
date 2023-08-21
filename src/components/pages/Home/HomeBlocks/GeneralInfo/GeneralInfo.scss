@@ -1,0 +1,57 @@
+@import '/src/common/styles/variables.scss';
+
+.general-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 80px 150px 60px 150px;
+
+    &__title {
+        font-weight: bolder;
+        font-size: 1.6rem;
+        color: $gray-dark;
+        margin-bottom: 40px;
+    }
+
+    &__content-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3), -1px -1px 2px rgba(230, 230, 230, 0.5), -5px 5px 10px rgba(227, 227, 227, 0.2), 5px -5px 10px rgba(230, 230, 230, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(197, 197, 197, 0.9);
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 30px 0px 30px 0px;
+        flex: 0 1 calc(25% - 1em);
+    }
+    
+    &__header {
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: $gray-dark;
+    }
+
+    &__body {
+        font-size: 1.1rem;
+        color: $gray-dark;
+        font-weight: 300;
+        word-wrap: break-word;
+        text-align: center;
+        padding: 0px 30px;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+}
